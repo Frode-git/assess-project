@@ -1,0 +1,330 @@
+body {
+  background-image: linear-gradient(
+    89.9deg,
+    rgba(178, 253, 238, 0.96) -8.1%,
+    rgba(207, 244, 254, 1) 26.3%,
+    rgba(207, 244, 254, 0.48) 47.5%,
+    rgba(254, 219, 243, 0.63) 61.5%,
+    rgba(254, 219, 243, 1) 78.7%,
+    rgba(254, 207, 210, 1) 109.2%
+  );
+}
+/* 字体图标声明 */
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?mc2o44");
+  src: url("fonts/icomoon.eot?mc2o44#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?mc2o44") format("truetype"),
+    url("fonts/icomoon.woff?mc2o44") format("woff"),
+    url("fonts/icomoon.svg?mc2o44#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 解决刷新页面显示{{}} */
+[v-cloak] {
+  display: none;
+}
+
+/* choice样式start */
+.choice {
+  margin: 215px auto;
+  padding-top: 20px;
+  width: 453px;
+  height: 280px;
+  border-radius: 7px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.choice h2 {
+  text-align: center;
+  color: #ee9ca7;
+  font-size: 30px;
+}
+
+.choice .choice-btn {
+  margin: 40px auto 0;
+  width: 203px;
+  height: 140px;
+}
+
+.choice .choice-register,
+.choice .choice-login {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  transition: all 0.5s;
+  font-size: 20px;
+  background-color: #ee9ca7;
+  border-radius: 20px;
+}
+
+.choice .choice-register:hover,
+.choice .choice-login:hover {
+  background-color: rgba(238, 156, 167, 0.25);
+  font-weight: 700;
+}
+
+.choice .choice-login {
+  background-color: #a7bfe8;
+}
+/* choice样式end */
+
+/* login样式start */
+.login {
+  position: relative;
+  margin: 150px auto 0;
+  padding-top: 35px;
+  width: 500px;
+  height: 460px;
+  background-color: #fff;
+}
+
+/* 返回按钮 */
+.login .back,
+.register .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "icomoon";
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.5s;
+  background-color: #a7bfe8;
+}
+
+.login .back:hover {
+  color: #a7bfe8;
+  background-color: #fff;
+}
+
+.login .back:focus {
+  box-shadow: 0 0 0 0.2rem rgba(167, 191, 232, 0.25);
+}
+
+/* 标题和字体段落部分 */
+.login h2,
+.register h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #a7bfe8;
+}
+
+.login p,
+.register p {
+  margin: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212529;
+}
+
+/* 第三方登录图标部分 */
+.login ul,
+.register ul {
+  margin: 15px 0 15px 160px;
+  width: 180px;
+  height: 40px;
+  font-family: "icomoon";
+}
+
+.login ul li,
+.register ul li {
+  float: left;
+  margin-right: 5px;
+}
+
+.login ul li a,
+.register ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  border-radius: 50%;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in;
+  background-color: #c2d2ef;
+  color: #fff;
+}
+
+.login ul li a:hover,
+.register ul li a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.login ul li:last-child,
+.register ul li:last-child {
+  margin-right: 0;
+}
+
+/* 输入框部分 */
+.login .login-main {
+  margin: 15px 0 0 150px;
+  width: 200px;
+  height: 188px;
+}
+
+.login-main .login-ipt {
+  margin-bottom: 10px;
+}
+
+.login-main .login-ipt-e,
+.login-main .login-ipt-p {
+  width: 100%;
+  height: 30px;
+  padding: 15px 0 15px 10px;
+  font-size: 15px;
+  color: #a7bfe8;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgba(167, 191, 232, 0.25);
+}
+
+.login-main .login-ipt-e:focus,
+.login-main .login-ipt-p:focus {
+  box-shadow: 0 0 0 0.2rem rgba(167, 191, 232, 0.25);
+}
+
+.login-main .login-ipt-e::placeholder,
+.login-main .login-ipt-p::placeholder {
+  margin-left: 30px;
+  letter-spacing: 0.1em;
+}
+
+/* 忘记密码和登录按钮部分 */
+.login-btn p {
+  margin: 20px 0;
+}
+
+.login-btn p a {
+  color: #007bff;
+}
+
+.login-btn p a:hover {
+  color: #2871bf;
+}
+
+.login-btn button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 25px;
+  transition: all 0.5s;
+  background-color: #a7bfe8;
+}
+
+.login-btn button:hover {
+  background-color: #fff;
+  color: #a7bfe8;
+  font-weight: 700;
+  border: 2px solid rgba(167, 191, 232, 0.25);
+}
+
+.login-btn button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(167, 191, 232, 0.25);
+}
+/* login样式end */
+
+/* register样式start */
+.register {
+  position: relative;
+  margin: 150px auto 0;
+  padding-top: 15px;
+  width: 500px;
+  height: 490px;
+  background-color: #fff;
+}
+
+.register .back {
+  background-color: #ee9ca7;
+}
+
+.register .back:hover {
+  color: #ee9ca7;
+  background-color: #fff;
+}
+
+.register .back:focus {
+  box-shadow: 0 0 0 0.2rem rgba(238, 156, 167, 0.25);
+}
+
+.register h2 {
+  color: #ee9ca7;
+}
+
+.register ul li a {
+  background-color: #ee9ca7;
+}
+
+.register-main {
+  margin: 10px 0 0 155px;
+  width: 200px;
+  height: 214px;
+}
+
+.register-main .register-ipt {
+  margin-bottom: 18px;
+}
+
+.register-main .register-ipt-name,
+.register-main .register-ipt-email,
+.register-main .register-ipt-pwd {
+  width: 100%;
+  height: 37px;
+  font-size: 15px;
+  color: #ee9ca7;
+  padding-left: 10px;
+  border: 1px solid;
+  border-color: rgba(238, 156, 167, 0.25);
+  border-radius: 5px;
+}
+
+.register-main .register-ipt-name::placeholder,
+.register-main .register-ipt-email::placeholder,
+.register-main .register-ipt-pwd::placeholder {
+  letter-spacing: 0.1em;
+}
+
+.register-main .register-ipt-name:focus,
+.register-main .register-ipt-email:focus,
+.register-main .register-ipt-pwd:focus {
+  box-shadow: 0 0 0 0.2rem rgba(238, 156, 167, 0.25);
+}
+
+.register-btn button {
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: all 0.5s;
+  background-color: #ee9ca7;
+}
+
+.register-btn button:hover {
+  font-weight: 700;
+  background-color: #fff;
+  color: #ee9ca7;
+  border: 2px solid rgba(238, 156, 167, 0.25);
+}
+
+.register-btn button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(238, 156, 167, 0.25);
+}
+/* register样式end */

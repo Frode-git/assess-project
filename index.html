@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录</title>
+    <!-- 引入初始化样式文件 -->
+    <link rel="stylesheet" href="src/assets/css/base.css" />
+    <!-- 引入首页专有样式文件 -->
+    <link rel="stylesheet" href="src/index.css" />
+  </head>
+
+  <body>
+    <div id="app" v-cloak>
+      <!-- choice部分start -->
+      <div class="choice" v-show="isShowChoice">
+        <h2>欢迎光临</h2>
+        <div class="choice-btn">
+          <a href="javascript:;" class="choice-register" @click="showRegister"
+            >注册</a
+          >
+          <a href="javascript:;" class="choice-login" @click="showLogin"
+            >登录</a
+          >
+        </div>
+      </div>
+      <!-- choice部分end -->
+      <!-- 登录部分start -->
+      <div class="login" v-show="isShowLogin">
+        <button class="back" @click="showChoice"></button>
+        <h2>欢迎登录</h2>
+        <p>第三方登录</p>
+        <ul>
+          <li v-for="item in ico"><a href="#">{{ item }}</a></li>
+        </ul>
+        <p>或用邮箱登录</p>
+        <form action="" class="login-main">
+          <div class="login-ipt">
+            <input
+              type="email"
+              placeholder="邮箱"
+              required="required"
+              autocomplete="on"
+              class="login-ipt-e"
+            />
+          </div>
+          <div class="login-ipt">
+            <input
+              type="password"
+              placeholder="密码"
+              required="required"
+              autocomplete="on"
+              class="login-ipt-p"
+            />
+          </div>
+          <div class="login-btn">
+            <p><a href="#">忘记密码？</a></p>
+            <button>登录</button>
+          </div>
+        </form>
+      </div>
+      <!-- 登录部分end -->
+      <!-- 注册部分start -->
+      <div class="register" v-show="isShowRegister">
+        <button class="back" @click="showChoice"></button>
+        <h2>用户注册</h2>
+        <p>第三方注册</p>
+        <ul>
+          <li v-for="item in ico"><a href="#">{{ item }}</a></li>
+        </ul>
+        <p>或者使用您的电子邮箱进行注册</p>
+        <form action="" class="register-main">
+          <div class="register-ipt">
+            <input
+              type="text"
+              name="userName"
+              id="userName"
+              placeholder="名称"
+              required="required"
+              autocomplete="off"
+              class="register-ipt-name"
+            />
+            <span><img :src="" alt=""/></span>
+          </div>
+          <div class="register-ipt">
+            <input
+              type="email"
+              name="userEmail"
+              id="userEmail"
+              placeholder="邮箱"
+              required="required"
+              autocomplete="off"
+              class="register-ipt-email"
+            />
+          </div>
+          <div class="register-ipt">
+            <input
+              v-model="pwd"
+              type="password"
+              name="userPwd"
+              id="userPwd"
+              placeholder="密码"
+              required="required"
+              autocomplete="off"
+              class="register-ipt-pwd"
+            />
+          </div>
+          <div class="register-ipt">
+            <input
+              v-model="confirmPwd"
+              type="password"
+              name="userPwd"
+              id="userPwd"
+              placeholder="确认密码"
+              required="required"
+              autocomplete="off"
+              class="register-ipt-pwd"
+            />
+          </div>
+
+          <div class="register-btn">
+            <button>注册</button>
+          </div>
+        </form>
+      </div>
+      <!-- 注册部分end -->
+    </div>
+    <!-- 引入开发版本的js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- 引入此页面的js -->
+    <script src="src/index.js"></script>
+  </body>
+</html>
