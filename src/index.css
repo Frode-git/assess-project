@@ -247,7 +247,7 @@ body {
   margin: 150px auto 0;
   padding-top: 15px;
   width: 500px;
-  height: 490px;
+  height: 500px;
   background-color: #fff;
 }
 
@@ -279,12 +279,14 @@ body {
 }
 
 .register-main .register-ipt {
+  position: relative;
   margin-bottom: 18px;
 }
 
 .register-main .register-ipt-name,
 .register-main .register-ipt-email,
-.register-main .register-ipt-pwd {
+.register-main .register-ipt-pwd,
+.register-main .register-ipt-confirmPwd {
   width: 100%;
   height: 37px;
   font-size: 15px;
@@ -297,14 +299,63 @@ body {
 
 .register-main .register-ipt-name::placeholder,
 .register-main .register-ipt-email::placeholder,
-.register-main .register-ipt-pwd::placeholder {
+.register-main .register-ipt-pwd::placeholder,
+.register-main .register-ipt-confirmPwd::placeholder {
   letter-spacing: 0.1em;
 }
 
 .register-main .register-ipt-name:focus,
 .register-main .register-ipt-email:focus,
-.register-main .register-ipt-pwd:focus {
+.register-main .register-ipt-pwd:focus,
+.register-main .register-ipt-confirmPwd:focus {
   box-shadow: 0 0 0 0.2rem rgba(238, 156, 167, 0.25);
+}
+
+.ipt-name,
+.ipt-email,
+.ipt-pwd,
+.ipt-confirmPwd {
+  position: absolute;
+  left: 210px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.ipt-name-error,
+.ipt-name-success,
+.ipt-email-error,
+.ipt-email-success,
+.ipt-pwd-error,
+.ipt-pwd-success,
+.ipt-confirmPwd-error,
+.ipt-confirmPwd-success {
+  display: none;
+}
+
+.ipt-name .ipt-name-error,
+.ipt-pwd .ipt-pwd-error,
+.ipt-email .ipt-email-error,
+.ipt-confirmPwd-error {
+  color: red;
+  width: 125px;
+}
+
+.register-agree {
+  margin: -10px 0 10px 0;
+  width: 200px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.register-agree input {
+  vertical-align: middle;
+}
+
+.register-agree a:hover {
+  color: #ee9ca7;
+  font-weight: 700;
 }
 
 .register-btn button {
