@@ -1,30 +1,3 @@
-# vue_test
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+# 补充说明：
+- 由于对vue框架中的组件、路由等等不是很熟悉，部分需要动态实现的功能只好采用原生js，并尽量的使用vue.js简化原生js部分
+- 该分支下的一些文件不知道什么用处（生成vue框架时，自动生成的，不敢乱删）
