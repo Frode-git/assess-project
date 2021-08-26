@@ -33,19 +33,14 @@ window.addEventListener('load', function () {
     }
   });
   var ipt_email = document.querySelector('.register-ipt-email').addEventListener('blur', function () {
-    if (this.value == '') {
+    // 此处正则公式，借鉴网上的
+    var myReg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+    if (!myReg.test(this.value)) {
       ipt_email_error.style.display = 'block';
+      ipt_email_success.style.display = 'none';
     } else {
-      for (var i = 0; i < this.value.length; i++) {
-        if (this.value[i] == '@') {
-          ipt_email_success.style.display = 'block';
-          ipt_email_error.style.display = 'none';
-          break;
-        } else {
-          ipt_email_error.style.display = 'block';
-          ipt_email_success.style.display = 'none';
-        }
-      }
+      ipt_email_error.style.display = 'none';
+      ipt_email_success.style.display = 'block';
     }
   });
   var ipt_pwd = document.querySelector('.register-ipt-pwd');
