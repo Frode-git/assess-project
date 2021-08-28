@@ -1,0 +1,198 @@
+/* 字体图标声明 */
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?ugc9uz');
+  src: url('fonts/icomoon.eot?ugc9uz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ugc9uz') format('truetype'),
+    url('fonts/icomoon.woff?ugc9uz') format('woff'),
+    url('fonts/icomoon.svg?ugc9uz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* 头部区域start */
+.work-header {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #525252;
+}
+
+.work-header .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.work-header .logo a {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+
+.work-header .logo a img {
+  width: 100%;
+  height: 100%;
+}
+
+.work-header .user {
+  position: absolute;
+  height: 50px;
+  right: 50px;
+  top: 0;
+}
+
+.work-header .user .user-welcome {
+  color: #fff;
+  padding: 0 5px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  margin-right: 10px;
+  cursor: default;
+}
+
+.work-header .user .user-img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.work-header .user .user-img::after {
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  content: '\e900';
+  font-size: 18px;
+  font-family: "icomoon";
+  color: #fff;
+  cursor: pointer;
+}
+
+.work-header .user .user-img img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/* 头部区域end */
+
+/* 左侧导航栏start */
+.left-nav {
+  width: 200px;
+  height: 660px;
+  background-color: #F1F0F0;
+}
+
+.left-nav ul {
+  margin-top: 10px;
+}
+
+.left-nav ul li {
+  position: relative;
+  width: 100%;
+  padding: 10px 0 0 50px;
+  line-height: 50px;
+  color: #686868;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+  /* 防止快速连续点击，出现选中文字现象 */
+  user-select: none;
+}
+
+.left-nav ul li:hover {
+  color: #030303;
+}
+
+.left-nav ul .nav-task::before,
+.left-nav ul .nav-communicate::before,
+.left-nav ul .nav-toolbox::before,
+.left-nav ul .nav-person::before,
+.left-nav ul .nav-suggestion::before {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  content: '\e904';
+  font-family: "icomoon";
+}
+
+.left-nav ul .nav-task i,
+.left-nav ul .nav-communicate i,
+.left-nav ul .nav-toolbox i,
+.left-nav ul .nav-person i,
+.left-nav ul .nav-suggestion i {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-family: 'icomoon';
+  font-size: 23px;
+}
+
+.left-nav ul .nav-communicate::before {
+  content: '\e909';
+}
+
+.left-nav ul .nav-toolbox::before {
+  content: '\e90e';
+}
+
+.left-nav ul .nav-person::before {
+  content: '\e971';
+}
+
+.left-nav ul .nav-suggestion::before {
+  content: '\e90c';
+}
+
+.left-nav ol li {
+  position: relative;
+  width: 100%;
+  padding: 10px 0 0 20px;
+  line-height: 50px;
+  color: #686868;
+  font-size: 20px;
+  text-align: left;
+}
+
+.nav-task-list ol li:nth-child(1)::before,
+.nav-task-list ol li:nth-child(2)::before,
+.nav-toolbox-list ol li:nth-child(1)::before,
+.nav-toolbox-list ol li:nth-child(2)::before,
+.nav-person-list ol li:nth-child(1)::before,
+.nav-person-list ol li:nth-child(2)::before,
+.nav-person-list ol li:nth-child(3)::before {
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  content: '\e908';
+  font-family: 'icomoon';
+}
+
+.nav-task-list ol li:nth-child(2)::before {
+  content: '\e907';
+}
+
+.nav-toolbox-list ol li:nth-child(1)::before {
+  content: '\e905';
+}
+
+.nav-toolbox-list ol li:nth-child(2)::before {
+  content: '\e906';
+}
+
+.nav-person-list ol li:nth-child(1)::before {
+  content: '\e90d';
+}
+
+.nav-person-list ol li:nth-child(2)::before {
+  content: '\e923';
+}
+
+.nav-person-list ol li:nth-child(3)::before {
+  content: '\e90b';
+}
+
+/* 左侧导航栏end */
