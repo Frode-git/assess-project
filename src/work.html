@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="assets/css/base.css">
   <!-- 引入本页专有样式 -->
   <link rel="stylesheet" href="work.css">
-  <!-- 引入共同部分样式 -->
-  <link rel="stylesheet" href="assets/css/work-common.css">
 </head>
 
 <body>
@@ -20,24 +18,32 @@
     <header class="work-header">
       <!-- logo部分 -->
       <div class="logo">
-        <a href="#"><img src="../src/assets/img/logo.png" alt=""></a>
+        <a href="#"><img src="assets/img/logo.png"></a>
       </div>
       <!-- 头像 -->
       <div class="user">
         <span class="user-welcome">您好，微微</span>
-        <span class="user-img"><img src="../src/assets/img/user.png" alt=""></span>
+        <span class="user-img">
+          <img src="assets/img/user.png">
+          <div class="user-menu">
+            <ul>
+              <li>个人设置</li>
+              <li>退出登录</li>
+            </ul>
+          </div>
+        </span>
       </div>
     </header>
     <!-- 左侧导航栏 -->
-    <div class="left-nav">
+    <div class="sidebar">
       <ul>
         <li>
           <div class="nav-task">
             <span>任务栏</span>
-            <i v-text="content"></i>
+            <i class="arrow"></i>
           </div>
           <div class="nav-task-list">
-            <ol>
+            <ol class="list-menu">
               <li>已布置任务</li>
               <li>发布任务</li>
             </ol>
@@ -46,28 +52,29 @@
         <li>
           <div class="nav-communicate">
             <span>交流区</span>
-            <i></i>
           </div>
         </li>
         <li>
           <div class="nav-toolbox">
             <span>工具箱</span>
-            <i></i>
+            <i class="arrow"></i>
           </div>
           <div class="nav-toolbox-list">
-            <ol>
-              <li>备忘录</li>
-              <li>便利贴</li>
+            <ol class="list-menu">
+              <li class="li-note">
+                便利贴
+              </li>
+              <li class="li-mem">备忘录</li>
             </ol>
           </div>
         </li>
         <li>
           <div class="nav-person">
             <span>个人中心</span>
-            <i></i>
+            <i class="arrow"></i>
           </div>
           <div class="nav-person-list">
-            <ol>
+            <ol class="list-menu">
               <li>修改密码</li>
               <li>个人信息</li>
               <li>更换邮箱</li>
@@ -77,7 +84,6 @@
         <li>
           <div class="nav-suggestion">
             <span>反馈与建议</span>
-            <i></i>
           </div>
         </li>
       </ul>
