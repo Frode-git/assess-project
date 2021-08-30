@@ -32,7 +32,7 @@
         <li v-for="item in ico"><a href="#">{{ item }}</a></li>
       </ul>
       <p>或用邮箱登录</p>
-      <form action="" class="login-main">
+      <form method="GET" action="src/work.html" class="login-main">
         <div class="login-ipt">
           <input type="email" placeholder="邮箱" required="required" autocomplete="on" class="login-ipt-e" />
         </div>
@@ -41,7 +41,7 @@
         </div>
         <div class="login-btn">
           <p><a href="#">忘记密码？</a></p>
-          <button>登录</button>
+          <button type="submit">登录</button>
         </div>
       </form>
     </div>
@@ -109,7 +109,7 @@
           </span>
         </div>
         <div class="register-agree">
-          <input type="checkbox" name="agree" id="agree"> <a href="#">同意用户协议</a>
+          <input type="checkbox" name="agree" id="agree" required="required"> <a href="#">同意用户协议</a>
         </div>
         <div class="register-btn">
           <button>注册</button>
